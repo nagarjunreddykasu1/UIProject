@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Table Demo</title>
+    <script></script>
+    <style>
+        .student {
+            background-color: powderblue;
+        }
+
+        .marks {
+            background-color: powderblue;
+            text-align: right;
+        }
+
+        .total {
+            font-weight: bold;
+        }
+
+        thead {
+            background-color: darkseagreen;
+        }
+
+        table {
+            border-spacing: 1px;
+        }
+
+        legend {
+            font-size: 18px;
+            width: auto;
+            color: #fff;
+            background: #2b3636;
+            padding-top: 0.25em;
+            padding-bottom: 0.25em;
+            padding-left: 1em;
+            padding-right: 1em;
+            border-radius: 1em;
+            display: block;
+            border: 3px solid rgb(209, 216, 209);
+            background-color: rgb(12, 136, 55);
+            color: white;
+            width: 10%;
+        }
+
+        #courses {
+            font-family: "Trebuchet MS", Arial, sans-serif;
+            width: 550px;
+            border-collapse: separate;
+        }
+
+        #courses th {
+            font-size: 1.1em;
+            padding-top: 5px;
+            padding-bottom: 4px;
+            background-color: blueviolet;
+            color: white;
+        }
+    </style>
+</head>
+
+<body style="background-color: beige;">
+    <h1 style="color: blueviolet;">Webtable Example</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th rowspan="2">S.No</th>
+                <th rowspan="2">SName</th>
+                <th colspan="4">Marks</th>
+            </tr>
+            <tr>
+                <th>Maths</th>
+                <th>Physics</th>
+                <th>Chemistry</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody align="left">
+            <tr>
+                <td class="student" align="center">1</td>
+                <td class="student">Aadhya</td>
+                <td class="marks">100</td>
+                <td class="marks">99</td>
+                <td class="marks">98</td>
+                <td class="marks total">297</td>
+            </tr>
+            <tr>
+                <td class="student" align="center">2</td>
+                <td class="student">Anuhya</td>
+                <td class="marks">99</td>
+                <td class="marks">97</td>
+                <td class="marks">95</td>
+                <td class="marks total">291</td>
+            </tr>
+            <tr>
+                <td class="student" align="center">3</td>
+                <td class="student">Shakthidhar Reddy</td>
+                <td class="marks">100</td>
+                <td class="marks">98</td>
+                <td class="marks">97</td>
+                <td class="marks total">295</td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+
+        </tbody>
+    </table>
+    <hr size="5px" color="red" width="50%" align="left" />
+    <legend>WebTable Example</legend>
+    <table border="1" id="courses" name="courses" class="table-display">
+        <tbody>
+            <tr>
+                <th>Instructor</th>
+                <th>Course</th>
+                <th>Price (INR)</th>
+            </tr>
+            <tr>
+                <td>Nagarjun Reddy</td>
+                <td>Selenium with Java (Cucumber BDD)</td>
+                <td>Rs. 3000</td>
+            </tr>
+            <tr>
+                <td>Nagarjun Reddy</td>
+                <td>Selenium with Python (PyTest)</td>
+                <td>Rs. 4000</td>
+            </tr>
+            <tr>
+                <td>Nagarjun Reddy</td>
+                <td>Selenium with C# (Specflow BDD)</td>
+                <td>Rs. 3000</td>
+            </tr>
+            <tr>
+                <td>Nagarjun Reddy</td>
+                <td>Appium with Java</td>
+                <td>Rs. 3000</td>
+            </tr>
+            <tr>
+                <td>Nagarjun Reddy</td>
+                <td>Appium with Python</td>
+                <td>Rs. 4000</td>
+            </tr>
+            <tr>
+                <td>Nagarjun Reddy</td>
+                <td>Appium with C#</td>
+                <td>Rs. 3000</td>
+            </tr>
+            <tr>
+                <td>Nagarjun Reddy</td>
+                <td>API Manual Testing with Postman</td>
+                <td>Rs. 1000</td>
+            </tr>
+            <tr>
+                <td>Nagarjun Reddy</td>
+                <td>API Automation Testing with Rest-Assured</td>
+                <td>Rs. 3000</td>
+            </tr>
+            <tr>
+                <td>Nagarjun Reddy</td>
+                <td>API Automation Testing with RestSharp</td>
+                <td>Rs. 3000</td>
+            </tr>
+            <tr>
+                <td>Nagarjun Reddy</td>
+                <td>Cypress with Typescript</td>
+                <td>Rs. 5000</td>
+            </tr>
+            <tr>
+                <td>Nagarjun Reddy</td>
+                <td>Robot Framework</td>
+                <td>Rs. 2000</td>
+            </tr>
+            <tr>
+                <td>Nagarjun Reddy</td>
+                <td>JMeter - Performance Testing tool</td>
+                <td>Rs. 3000</td>
+            </tr>
+        </tbody>
+    </table>
+    <legend>WebTable Example</legend>
+    <table border="1" id="courses" name="courses" class="table-display" style="overflow-y: auto; height: 10px;">
+        <thead>
+            <tr>
+                <th style="position: sticky; top: 0;">Employee ID</th>
+                <th style="position: sticky; top: 0;">Employee Name</th>
+                <th style="position: sticky; top: 0;">Department</th>
+                <th style="position: sticky; top: 0;">Location</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>NAL-001</td>
+                <td>Nagarjun Reddy</td>
+                <td>QA</td>
+                <td>Hyderabad</td>
+            </tr>
+            <tr>
+                <td>NAL-002</td>
+                <td>Jayaprakash</td>
+                <td>QA</td>
+                <td>Bangalore</td>
+            </tr>
+            <tr>
+                <td>NAL-003</td>
+                <td>Murali</td>
+                <td>QA</td>
+                <td>Hyderabad</td>
+            </tr>
+            <tr>
+                <td>NAL-004</td>
+                <td>Sudhakar</td>
+                <td>Development</td>
+                <td>Hyderabad</td>
+            </tr>
+            <tr>
+                <td>NAL-005</td>
+                <td>Vijay</td>
+                <td>Management</td>
+                <td>USA</td>
+            </tr>
+            <tr>
+                <td>NAL-006</td>
+                <td>Chandu</td>
+                <td>HR</td>
+                <td>Vizag</td>
+            </tr>
+            <tr>
+                <td>NAL-008</td>
+                <td>Srinivas Rao</td>
+                <td>Development</td>
+                <td>USA</td>
+            </tr>
+        </tbody>
+</body>
+
+</html>
